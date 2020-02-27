@@ -1,6 +1,7 @@
+#include "string_utils.hpp"
+
 #include <cstdio>
 #include <cstdlib>
-#include "string_utils.hpp"
 
 int main(int argc, char** argv)
 {
