@@ -8,7 +8,7 @@ int main(int argc, char** argv)
 	(void)argc;
 	(void)argv;
 
-	char str[] = "Hello World!! My name is Onur!! Yeah!!Science Bitch!";
+	char str[] = "Hello World!! My name is Onur!!    !Yeah!!Science Bitch!";
 	std::vector<const char*> words = split(str, "! ");
 	for(auto& word: words)
 	{
