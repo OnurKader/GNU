@@ -113,7 +113,7 @@ void handle_file_copy(const char* src, const char* dest, struct stat& status, in
 		// Don't use src, extract the last part, the last slash of the string,
 		// /home/beronthecolossus/.zshrc should just be .zshrc
 		strcat(rel_path, strrchr(src, '/') + 1U);
-		// Eg. ./cp /home/beronthecolossus/.zshrc /tmp
+		// Eg. ./cp /home/beronthecolossus/.zshrc /tmp/
 		// would create a file at /tmp/.zshrc but it'll be empty
 		dest_fd = creat(rel_path, orig_file_perms);
 		if(dest_fd < 0)
